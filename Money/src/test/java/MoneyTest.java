@@ -1,4 +1,5 @@
 import com.gilhyeon.money.Dollar;
+import com.gilhyeon.money.Franc;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -12,6 +13,13 @@ public class MoneyTest {
         Dollar five = new Dollar(5);
         assertEquals(new Dollar(10), five.times(2));
         assertEquals(new Dollar(15), five.times(3));
+    }
+
+    @Test
+    public void testFrancMultiplication() {
+        Franc five = new Franc(5);
+        assertEquals(new Franc(10), five.times(2));
+        assertEquals(new Franc(15), five.times(3));
     }
 
     @Test
